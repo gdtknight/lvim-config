@@ -1,62 +1,22 @@
-# Title
+# LunarVim Configuration
 
-## Test1
+- `$HOME/.config/lvim/` 디렉토리 내에 위치시킨다.
 
-## Test2
+## Directory Structure
 
-## Test3 markdown preview
+- `ftplugin` : filetype별 설정 파일
+- `lsp-settings` : lsp 관련 json 설정 파일
+- `lua` : config.lua 에서 참조하는 각종 lua config 파일 위치
+- `plugin` : packer (plugin management) 컴파일 파일 저장 위치. (자동생성)
+- `config.lua` : Lunar Vim 실행시 자동으로 참조되는 환경설정 내용 저장.
 
-``` mermaid
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-```
+## `lua/configs` Directory
 
-
-``` mermaid
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-<<Interface>> Class01
-Class09 --> C2 : Where am I?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  <<service>>
-  int id
-  size()
-}
-
-class 
-```
-
-```mermaid
-erDiagram
-    USER ||--o{ AUTHORITY: places
-    USER{
-        string username
-        string password
-        string algorithm
-    }
-    AUTHORITY{
-        long id
-        string name
-        string user
-    }
-    PRODUCT{
-        long id
-        string name
-        string price
-        string currency
-    }
-```
+- `basic-key.lua` : LunarVim overall key mapping configuration
+- `dap.lua` : Debug Adapter Protocol configuration
+- `dbui.lua` : vim-dadbod-ui plugin configuration
+- `markdown-preview.lua` : Markdown Preview plugin configuration
+- `rest.lua` : rest.nvim plugin configuration
+- `symbols.lua` : symbols-outline plugin configuration
+- `telescope.lua` : telescope plugin configuration
+- `trouble.lua` : trouble plugin configuration
