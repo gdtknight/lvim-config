@@ -43,17 +43,23 @@ lvim.plugins = {
     { "rest-nvim/rest.nvim" },
     { "tpope/vim-dadbod" },
     { "kristijanhusak/vim-dadbod-ui" },
+      -- install without yarn or npm
+    {
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    }
 }
 
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright", "jdtls" })
 
-require('configs.basic-key-config')
-require('configs.dap-config')
-require('configs.dbui-config')
-require('configs.rest-config')
-require('configs.symbols-config')
-require('configs.telescope-config')
-require('configs.trouble-config')
+require('configs.basic-key')
+require('configs.dap')
+require('configs.dbui')
+require('configs.markdown-preview')
+require('configs.rest')
+require('configs.symbols')
+require('configs.telescope')
+require('configs.trouble')
 
 -- generic LSP settings
 
