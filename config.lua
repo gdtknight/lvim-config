@@ -43,10 +43,10 @@ lvim.plugins = {
     { "rest-nvim/rest.nvim" },
     { "tpope/vim-dadbod" },
     { "kristijanhusak/vim-dadbod-ui" },
-      -- install without yarn or npm
+    -- install without yarn or npm
     {
-      "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
     }
 }
 

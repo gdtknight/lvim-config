@@ -2,9 +2,17 @@
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+
+lvim.keys.normal_mode["<A-h>"] = ":tabprev<CR>"
+lvim.keys.normal_mode["<A-j>"] = ":tabclose<CR>"
+lvim.keys.normal_mode["<A-k>"] = ":tabnew %<CR>"
+lvim.keys.normal_mode["<A-l>"] = ":tabnext<CR>"
+
 lvim.keys.insert_mode["jk"] = "<ESC>"
+
 lvim.keys.visual_mode["p"] = '"_dP'
 lvim.keys.visual_mode["K"] = ":move '<-2<CR>gv-gv"
 lvim.keys.visual_mode["J"] = ":move '>+1<CR>gv-gv"
