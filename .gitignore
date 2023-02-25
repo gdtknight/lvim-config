@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/vim,packer,zsh,lua,java,gradle,eclipse,intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,packer,zsh,lua,java,gradle,eclipse,intellij
 
+*/packer_compiled.lua
+
 ### Eclipse ###
 .metadata
 bin/
