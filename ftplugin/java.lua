@@ -22,7 +22,7 @@ else
 end
 
 -- Find root of project
-local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
+local root_markers = { ".git" }
 local root_dir = require("jdtls.setup").find_root(root_markers)
 if root_dir == "" then
   return
@@ -237,3 +237,5 @@ vim.cmd "command! -buffer JdtUpdateConfig lua require('jdtls').update_project_co
 vim.cmd "command! -buffer JdtBytecode lua require('jdtls').javap()"
 vim.cmd "command! -buffer JdtBuildProject lua require('jdtls').build_projects()"
 -- vim.cmd "command! -buffer JdtJshell lua require('jdtls').jshell()"
+
+
