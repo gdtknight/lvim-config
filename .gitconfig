@@ -1,26 +1,12 @@
-[includeIf "gitdir:/home/ubuntu/workspace/"]
-  path=/home/ubuntu/workspace/.gitconfig
-
-[includeIf "gitdir:/home/ubuntu/.config/"]
-  path=/home/ubuntu/workspace/.gitconfig
-
-[includeIf "gitdir:/home/ubuntu/workspace-zbc/"]
-  path=/home/ubuntu/workspace-zbc/.gitconfig
-
-[includeIf "gitdir:/home/ubuntu/workspace-nsw/"]
-  path=/home/ubuntu/workspace-nsw/.gitconfig
-
-[includeIf "gitdir:/home/ubuntu/workspace-dsc/"]
-  path=/home/ubuntu/workspace-dsc/.gitconfig
-
-[includeIf "gitdir:/home/ubuntu/workspace-gdt/"]
-  path=/home/ubuntu/workspace-gdt/.gitconfig
-
 [alias]
 	clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
 
 [core]
   editor = /home/ubuntu/.local/bin/lvim
+
+[user]
+  name=gdtknight
+  email=gdtknight@naver.com
 
 [github]
   user=gdtknight
