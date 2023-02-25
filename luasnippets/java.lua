@@ -1,0 +1,38 @@
+return {
+  s("tclass", {
+    t({"public class $TM_FILENAME"}),t({"Test {"}), 
+    t({"","\t"}),i(1),
+    t({"","}"}),
+  }),
+  s("tmethod", {
+    t({"@Test"}),
+    t({"","void "}),i(1,"given"),t({"_"}), i(2,"when"),t({"_"}),i(3,"then"),t({"() {"}),
+    t({"","\t// Given"}),
+    t({"",""}),
+    t({"","\t// When"}),
+    t({"",""}),
+    t({"","\t// Then"}),
+    t({"",""}),
+    t({"","}"}),
+  }),
+  s("imports_junit5",{
+    t({"","import static org.hamcrest.Matchers.*;"}),
+    t({"","import static org.hamcrest.MatcherAssert.assertThat;"}),
+    t({"","import static org.junit.jupiter.api.Assertions.assertEquals;"}),
+    t({"","import static org.mockito.Mockito.*;"}),
+    t({"","import org.hamcrest.CoreMatchers;"}),
+    t({"","import org.junit.jupiter.api.AfterEach;"}),
+    t({"","import org.junit.jupiter.api.BeforeEach;"}),
+    t({"","import org.junit.jupiter.api.DisplayName;"}),
+    t({"","import org.junit.jupiter.api.Test;"}),
+    t({"","import org.junit.jupiter.api.extension.ExtendWith;"}),
+    t({"","import org.junit.jupiter.params.ParameterizedTest;"}),
+    t({"","import org.junit.jupiter.params.provider.CsvSource;"}),
+    t({"","import org.mockito.ArgumentCaptor;"}),
+    t({"","import org.mockito.junit.jupiter.MockitoExtension;"}),
+    t({"","import org.mockito.Mock;"}),
+  }),
+  s("test_equals", {
+    t({"assertEquals("}),i(1,"anObject"),t({", "}),i(2,"anotherObject"),t({");"}),
+  }),
+}
