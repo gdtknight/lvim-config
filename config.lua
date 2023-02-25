@@ -128,6 +128,8 @@ lvim.plugins = {
   { "kristijanhusak/vim-dadbod-ui" },
   -- install without yarn or npm
   { "iamcco/markdown-preview.nvim" },
+  {"mattn/webapi-vim"},
+  {"mattn/vim-gist"},
 }
 
 require('configs.basic-key')
@@ -138,4 +140,3 @@ require('configs.rest')
 require('configs.symbols')
 require('configs.telescope')
 require('configs.trouble')
-require('configs.luasnip')
