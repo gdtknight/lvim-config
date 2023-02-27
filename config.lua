@@ -11,7 +11,7 @@ vim.opt.relativenumber = true
 lvim.log.level = "info"
 lvim.format_on_save = {
   enabled = true,
-  pattern = {"*.lua","*.java"},
+  pattern = { "*.lua", "*.java" },
   timeout = 1000,
 }
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -128,8 +128,8 @@ lvim.plugins = {
   { "kristijanhusak/vim-dadbod-ui" },
   -- install without yarn or npm
   { "iamcco/markdown-preview.nvim" },
-  {"mattn/webapi-vim"},
-  {"mattn/vim-gist"},
+  { "mattn/webapi-vim" },
+  { "mattn/vim-gist" },
 }
 
 require('configs.basic-key')
